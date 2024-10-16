@@ -11,3 +11,7 @@ test('should return "Buzz" for numbers divisible by 5', () => {
 test('should return "FizzBuzz" for numbers divisible by both 3 and 5', () => {
   expect(fizzBuzz(15)).toBe("FizzBuzz");
 });
+
+test("should return the number itself if not divisible by 3 or 5", () => {
+  expect(fizzBuzz(7)).toBe(7);
+});
